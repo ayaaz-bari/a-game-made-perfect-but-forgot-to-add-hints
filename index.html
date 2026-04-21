@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="hearts" id="hearts"></div>
+
+    <input type="number" id="guess" placeholder="0-200">
+    <br><br>
+    <button onclick="checkGuess()">Guess</button>
+
+    <div class="hint" id="hint"></div>
+
+    <div id="gameOver" class="hidden">
+        <h2>Game Over</h2>
+        <button onclick="resetGame()">Reset</button>
+        <button onclick="quitGame()">Quit</button>
+    </div>
+
+    <div id="win" class="hidden">
+        <h2>You Win!</h2>
+        <button onclick="resetGame()">Continue</button>
+    </div>
+</div>
+
+<audio id="music" autoplay loop></audio>
+
+<script src="./developer.js"></script>
+</body>
+</html>
